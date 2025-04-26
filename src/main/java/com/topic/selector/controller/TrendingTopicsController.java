@@ -22,7 +22,7 @@ public class TrendingTopicsController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Story>> getTrendingTopics() {
+    public ResponseEntity<List<String>> getTrendingTopics() {
         return ResponseEntity.ok(trendingTopicsService.fetchTrendingTopics());
     }
 }
